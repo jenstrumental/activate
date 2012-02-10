@@ -1,0 +1,15 @@
+development:
+  host: localhost
+  database: activate
+
+test:
+  host: localhost
+  database: activate_test
+
+# set these environment variables on your prod server
+production:
+  host: staff.mongohq.com
+  port: 10090
+  username: jenstrumental
+  password: sAturdays!
+  database: activate
