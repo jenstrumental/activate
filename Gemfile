@@ -7,7 +7,6 @@ gem 'jquery-rails'
 gem 'mongo', "= 1.3.1"
 gem 'mongoid', "=2.4.0"
 gem 'rails', '3.1.1'
-gem 'sqlite3'
 gem 'thin'
 
 
