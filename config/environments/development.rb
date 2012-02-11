@@ -1,4 +1,5 @@
 Exercise::Application.configure do
+  config.serve_static_assets = true 
   # Settings specified here will take precedence over those in config/application.rb
   # Settings specified here will take precedence over those in config/application.rb
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
