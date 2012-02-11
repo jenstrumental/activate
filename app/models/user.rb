@@ -5,6 +5,9 @@ class User
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  has_many :exercise_sessions
+
   field :name, :type => String
+  
 
 end

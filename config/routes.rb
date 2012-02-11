@@ -1,4 +1,6 @@
 Exercise::Application.routes.draw do
+  resources :exercise_sessions
+
   devise_for :users
 
   # The priority is based upon order of creation:
