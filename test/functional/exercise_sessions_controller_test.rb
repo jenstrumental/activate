@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ExerciseSessionsControllerTest < ActionController::TestCase
+class ActivateSessionsControllerTest < ActionController::TestCase
   setup do
     @exercise_session = exercise_sessions(:one)
   end
@@ -17,7 +17,7 @@ class ExerciseSessionsControllerTest < ActionController::TestCase
   end
 
   test "should create exercise_session" do
-    assert_difference('ExerciseSession.count') do
+    assert_difference('ActivateSession.count') do
       post :create, exercise_session: @exercise_session.attributes
     end
 
@@ -40,7 +40,7 @@ class ExerciseSessionsControllerTest < ActionController::TestCase
   end
 
   test "should destroy exercise_session" do
-    assert_difference('ExerciseSession.count', -1) do
+    assert_difference('ActivateSession.count', -1) do
       delete :destroy, id: @exercise_session.to_param
     end
 

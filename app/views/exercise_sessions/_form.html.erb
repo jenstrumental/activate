@@ -11,6 +11,19 @@
     </div>
   <% end %>
 
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  
+  <div class="field">
+    <%= f.label "Exercise" %><br />
+    <%= f.collection_select :exercise_id, Exercise.all, :id, :name %>
+  </div>
+  
+  <div class="field">
+    <%= f.label "How many?" %><br />
+    <%= f.text_field :reps %>
+  </div>
+  
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,4 +1,4 @@
-Exercise::Application.configure do
+Activate::Application.configure do
   config.serve_static_assets = true 
   
   # Settings specified here will take precedence over those in config/application.rb

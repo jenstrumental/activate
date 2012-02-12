@@ -1,5 +1,18 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <b>Exercise:</b>
+  <%= @exercise_session.exercise.name %>
+</p>
+<p>
+  <b>Reps:</b>
+  <%= @exercise_session.reps %>
+</p>
+<p>
+  <b>Created at:</b>
+  <%= @exercise_session.created_at %>
+</p>
+
 
 <%= link_to 'Edit', edit_exercise_session_path(@exercise_session) %> |
 <%= link_to 'Back', exercise_sessions_path %>

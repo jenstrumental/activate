@@ -47,7 +47,7 @@ class ExerciseSessionsController < ApplicationController
 
     respond_to do |format|
       if @exercise_session.save
-        format.html { redirect_to @exercise_session, notice: 'Exercise session was successfully created.' }
+        format.html { redirect_to @exercise_session, notice: 'Activate session was successfully created.' }
         format.json { render json: @exercise_session, status: :created, location: @exercise_session }
       else
         format.html { render action: "new" }
@@ -63,7 +63,7 @@ class ExerciseSessionsController < ApplicationController
 
     respond_to do |format|
       if @exercise_session.update_attributes(params[:exercise_session])
-        format.html { redirect_to @exercise_session, notice: 'Exercise session was successfully updated.' }
+        format.html { redirect_to @exercise_session, notice: 'Activate session was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }

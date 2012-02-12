@@ -1,8 +1,10 @@
-Exercise::Application.routes.draw do
+Activate::Application.routes.draw do
+  
+  resources :exercises
   resources :exercise_sessions
-
-  devise_for :users
-
+  
+  devise_for :user
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
