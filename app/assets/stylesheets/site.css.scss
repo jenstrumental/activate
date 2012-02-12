@@ -21,15 +21,21 @@ body {
 #header {
   width: 100%;
 
-  #cloud {
-	display: block;
-	margin: 20px;
-  }
-
   h1 {
+	background-image: image_url("cloud_small.png");
+	height: 96px;
+	width: 200px;
+	background-repeat: no-repeat;
     margin: 20px;
     font-size: 25px;
     font-family: 'Amaranth', sans-serif;
+
+	a, a:hover {
+      padding: 49px 34px;
+	  display: block;
+	  text-decoration: none;
+	  background-color: transparent;
+	}
   }
   .controls {
     float: right;
