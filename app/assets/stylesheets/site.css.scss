@@ -1,0 +1,43 @@
+$blue-top: #008af7;
+$blue-bottom: #53e9ff;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', 'Droid Sans', Arial, sans-serif;
+  background-color: $blue-top;
+  background: -webkit-gradient(linear, left top, left bottom, from($blue-top), to($blue-bottom)); /* for webkit browsers */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header {
+  width: 100%;
+
+  #cloud {
+	display: block;
+	margin: 20px;
+  }
+
+  h1 {
+    margin: 20px;
+    font-size: 25px;
+    font-family: 'Amaranth', sans-serif;
+  }
+  .controls {
+    float: right;
+    font-size: 12px;
+    margin: 20px;
+  }
+}
+
+#main {
+  margin: 20px;
+}

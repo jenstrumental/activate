@@ -6,36 +6,7 @@
  *= require_tree . 
 */
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Helvetica Neue', 'Droid Sans', Arial, sans-serif;
-  background-color: #53e9ff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#008af7), to(#53e9ff)); /* for webkit browsers */
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#header {
-  width: 100%;
-}
-#header h1 {
-  margin: 20px;
-  font-size: 25px;
-}
-#header .controls {
-  float: right;
-  font-size: 12px;
-  margin: 20px;
-}
-
-#main {
-  margin: 20px;
-}
+/*
+font-family: 'Puritan', sans-serif; // readable
+font-family: 'Amaranth', sans-serif; // display/title
+*/
