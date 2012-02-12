@@ -47,7 +47,7 @@ class ExerciseSessionsController < ApplicationController
 
     respond_to do |format|
       if @exercise_session.save
-        format.html { redirect_to @exercise_session, notice: 'Activate session was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Activate session was successfully created.' }
         format.json { render json: @exercise_session, status: :created, location: @exercise_session }
       else
         format.html { render action: "new" }
