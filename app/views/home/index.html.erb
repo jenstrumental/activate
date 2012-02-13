@@ -1,6 +1,6 @@
 <h2>Welcome!</h2>
 
-<p>It's a good thing you're here, because now you can get really buff.</p>
+<p><%= WelcomeMessage.for(current_user) %></p>
 
 <%= link_to "I just did something awesome!", new_exercise_session_path %><br/><br/>
 

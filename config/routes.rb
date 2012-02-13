@@ -1,5 +1,7 @@
 Activate::Application.routes.draw do
   
+  resources :welcome_messages
+
   resources :exercises
   resources :exercise_sessions
   

@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Text:</b>
+  <%= @welcome_message.text %>
+</p>
+
+
+<%= link_to 'Edit', edit_welcome_message_path(@welcome_message) %> |
+<%= link_to 'Back', welcome_messages_path %>

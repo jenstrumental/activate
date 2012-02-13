@@ -1,0 +1,23 @@
+<h1>Listing welcome_messages</h1>
+
+<table>
+  <tr>
+    <th>Text</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @welcome_messages.each do |welcome_message| %>
+  <tr>
+    <td><%= welcome_message.text %></td>
+    <td><%= link_to 'Show', welcome_message %></td>
+    <td><%= link_to 'Edit', edit_welcome_message_path(welcome_message) %></td>
+    <td><%= link_to 'Destroy', welcome_message, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Welcome message', new_welcome_message_path %>
