@@ -15,6 +15,7 @@
       <div class="controls">
         Welcome back, <%= current_user.name %>
         <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+        <%= link_to "Settings", edit_user_registration_path %>
       </div>
     <% end %>
     <h1><%= link_to "[ Activate ]", root_path %></h1>
