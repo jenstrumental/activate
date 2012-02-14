@@ -1,5 +1,5 @@
 <h1>You have done:</h1>
 
 <% @exercise_count_pairs.each do |exercise, count| %>
-  <%= "#{count} #{exercise.name}" %><br/>
+  <%= pluralize count, exercise.name %><br/>
 <% end%>
