@@ -1,5 +1,5 @@
 <h1>You have done:</h1>
 
-<% @exercise_sessions.each do |exercise_session| %>
-  <%= "#{exercise_session.reps} #{exercise_session.exercise.name} on #{exercise_session.created_at}" %><br/>
-<% end %>
+<% @exercise_count_pairs.each do |exercise, count| %>
+  <%= "#{count} #{exercise.name}" %><br/>
+<% end%>

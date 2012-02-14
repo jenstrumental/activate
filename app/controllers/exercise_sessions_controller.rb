@@ -5,8 +5,16 @@ class ExerciseSessionsController < ApplicationController
   # GET /exercise_sessions
   # GET /exercise_sessions.json
   def index
-    @exercise_sessions = ExerciseSession.where(:user_id => current_user.id)
-
+    groups = ExerciseSession.where(:user_id => current_user.id).only(:exercise_id).group
+    exercise_count_map = {}
+    groups.each do |group_hash|
+      exercise_id = group_hash["exercise_id"]
+      sessions = group_hash["group"]
+      exercise_count_map[Exercise.find(exercise_id)] =
+        sessions.map(&:reps).inject { |sum, el| sum + el }
+    end
+    @exercise_count_pairs = exercise_count_map.sort_by{|k, v| v}.reverse
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @exercise_sessions }

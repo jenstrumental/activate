@@ -7,6 +7,12 @@
     <th></th>
   </tr>
 
+<!-->
+  <% @exercise_sessions.each do |exercise_session| %>
+    <%= "#{exercise_session.reps} #{exercise_session.exercise.name} on #{exercise_session.created_at}" %><br/>
+  <% end %>
+<-->
+
 <% @exercise_sessions.each do |exercise_session| %>
   <tr>
     <td><%= link_to 'Show', exercise_session %></td>
