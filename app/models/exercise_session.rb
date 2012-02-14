@@ -8,5 +8,8 @@ class ExerciseSession
   
   field :reps, :type => Integer
   
+  validates :user_id, :exercise_id, :presence => true
+  validates :reps, :numericality => true
+  
   
 end
