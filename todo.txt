@@ -1,0 +1,6 @@
+- catch documentnotfound exception when deleting just-created exercise
+- add admin role, admin-protect all appropriate actions
+- let user see entire session history (append to bottom of index page?)
+- big button styles for front page
+- investigate offline functionality
+- add charts!
