@@ -14,6 +14,7 @@ class ExerciseSessionsController < ApplicationController
         sessions.map(&:reps).inject { |sum, el| sum + el }
     end
     @exercise_count_pairs = exercise_count_map.sort_by{|k, v| v}.reverse
+    @exercise_sessions = ExerciseSession.where(:user_id => current_user.id)
     
     respond_to do |format|
       format.html # index.html.erb

@@ -1,5 +1,25 @@
 <h1>You have done:</h1>
 
-<% @exercise_count_pairs.each do |exercise, count| %>
-  <%= pluralize count, exercise.name %><br/>
+<table id="chart">
+<% font_size = 30
+   @exercise_count_pairs.each do |exercise, count| %>
+  <tr style="font-size:<%= font_size %>px">
+    <td class="right"><%= count %></td>
+    <td><%= exercise.name %></td>
+    <% font_size = [font_size - 4, 12].max %>
+  </tr>
 <% end%>
+</table>
+
+<h3>Your sessions</h3>
+<table>
+<% @exercise_sessions.each do |exercise_session| %>
+  <tr>
+    <td class="right"><%= exercise_session.reps %></td>
+    <td><%= exercise_session.exercise.name %></td>
+    <td><%= time_ago_in_words exercise_session.created_at %> ago</td>
+    <td><%= link_to 'Edit', edit_exercise_session_path(exercise_session) %></td>
+    <td><%= link_to 'Destroy', exercise_session, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>

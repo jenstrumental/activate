@@ -1,6 +1,8 @@
-- catch documentnotfound exception when deleting just-created exercise
-- add admin role, admin-protect all appropriate actions
+X catch documentnotfound exception when deleting just-created exercise
+
 - let user see entire session history (append to bottom of index page?)
+- pluralize names on e_s/index
+- add admin role, admin-protect all appropriate actions
 - big button styles for front page
 - investigate offline functionality
 - add charts!
